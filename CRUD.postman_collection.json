@@ -1,0 +1,169 @@
+{
+  "info": {
+    "_postman_id": "2ddf6d84-20dc-44fe-99c8-f2af730d00ab",
+    "name": "CRUD",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "46045911",
+    "_collection_link": "https://go.postman.co/collection/46045911-2ddf6d84-20dc-44fe-99c8-f2af730d00ab?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{admin_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3030/",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GetAllContent",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{admin_token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3030/get",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            "get"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PostContent",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"content\": \"Saikat will shine\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3030/post",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            "post"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DeleteContent",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"content\": \"Saikat will shine\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3030/delete",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            "delete"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UpdateContent",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"old_content\": \"Finish documentation for the API\",\r\n    \"new_content\": \"Made with love by saikat\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3030/update",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            "update"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "TotalNumber",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"old_content\": \"Finish documentation for the API\",\r\n    \"new_content\": \"Made with love by saikat\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:3030/totalnum",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3030",
+          "path": [
+            "totalnum"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
